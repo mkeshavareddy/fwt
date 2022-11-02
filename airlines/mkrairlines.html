@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+    <head>
+        <title> mkrairlines</title>
+        <style>
+            body{
+                background-color: rgb(94, 147, 140);
+            }
+            .logo{
+                width:200px;
+                border-radius: 40px;
+                height: 200px;
+                filter:brightness(100px);
+                border-color: red;
+                border-style:solid;
+
+            }
+            .search-bar{
+                text-transform:italic;
+                position: absolute;
+                top: 0;
+                right:0;  
+            }
+
+            .heading{
+                text-transform:uppercase;
+                text-align:center;
+                background-color: rgb(136, 194, 255);
+                top: 200px;
+                right:2px;
+                width: 70%;
+                height: 100%;
+                color:rgb(126, 82, 120);
+                 
+                  
+            }
+            .patner{
+                position: absolute;
+                top:70px;
+                right:2px;
+                width: 200px;
+                border-radius: 100px;
+                
+            }
+            .colabration{
+                text-transform: uppercase;
+                text-align: right;
+                position: absolute;
+                top:175px;
+                right:2px;
+                
+            }
+             .copy-rights{
+                position: fixed; 
+                bottom: 0;
+                width:100%;
+             }
+
+             .offers{
+                background-color: rgb(143, 89, 156);
+                height:40px;
+                font-style:italic;
+                text-align:center;
+                border-radius: 40px;
+                padding-top: 20px;
+                padding-bottom: 5px;
+                position: relative;
+                top:1000px;
+             }
+             .scroll-container{
+                border: 3px solid black;
+                border-radius: 5px;
+                overflow: hidden;
+              }
+              .scroll-text{
+                text-align: right;
+                transform: translateX(-100%);
+                transform: translatex(+100%);
+                animation-duration:8s ;
+                animation-name:text ;
+                animation-direction: alternate;
+                animation-iteration-count:infinite;
+                top:300px;
+              }
+              @keyframes text{
+                from{transform: translateX(-100%);}
+                to{transform: translateX(+100%);}
+
+        
+              }
+              .direction{
+                width:15px;
+                height:10px;
+              }
+              .arrangement div{
+               position: relative;
+               
+               display:inline-block;
+                right:10px;
+                left:40px;
+                font-size: 30px;
+                height:0;
+
+            
+               
+                
+              }
+              .checkbox{
+                position: absolute;
+                top:275px;
+               
+              }
+              .middle{
+                position: relative;
+               
+                
+              }
+              .set{
+                position: relative;
+                left:50px;
+                bottom: 60px;
+                font-size: 30px;
+              }
+              .place{
+                height:1px;
+                top:120px;
+                font-size: 30px;
+              }
+              .tablee{
+                 font-family: arial, sans-serif;
+                 border-collapse: collapse;
+                 width: 100%;
+                    }
+
+                td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+                }
+
+                tr:nth-child(even) {
+                 background-color: #dddddd;
+                }   
+
+              
+
+              
+
+
+              
+            
+   
+        </style>
+
+    </head>
+    <body style="
+    height:1000px;
+    width:auto;
+    ">
+        <input  class="search-bar" type="text" placeholder="search flight">
+       <div> <img class="logo" src="LOGO2.svg"></img></div>
+        <div><img class="patner" src="download.png"></img>
+            <p class="colabration">in colabration with </p></div>
+            <div><p class="copy-rights">
+                Copyright &#64;2023 MKR airlinesLtd. All rights reserved. Use of this website indicates your compliance with our Privacy Policy, Conditions of Carriage, Terms and Conditions.
+            </p></div>
+
+           <div><p class="offers">
+            book early for the best offers on holiday destinations.<span class="high">Booknow</span>
+        </p></div> 
+       
+        
+        <div style="background-color:yellow;
+        height:auto;
+        color:black;
+        position:fixed;
+        top:0;
+        cursor: pointer;
+        font-size: 30px;
+        ">help?</div>
+       <li style="display:inline-block;">
+        <div>
+            <form action="details.php" method="post">
+               
+           <ul calss="middle"><div class="checkbox">
+           <label class="container">one way
+            <input type="radio"  checked="checked"name="radio">
+            <span class="checkmark"></span></label>
+            <label class="container">Round trip 
+                <input type="radio"name="radio">
+                <span class="checkmark"></span>
+            </label>
+       
+        <li class="place">
+        <label for="from"> from</label>
+        <select name="from" id="from">
+            <option value="hyderabad">hyderabad</option>
+            <option value="delhi">delhi</option>
+            <option value="goa">goa</option>
+            <option value="bangalore">bangalore</option>
+            <option value="tirupati">tirupati</option>
+            <option value="mumbai">mumbai</option>
+            <option value="chennai">chennai</option>
+            <option value="kolkata">kolkata</option>
+            <option value="lucknow">lucknow</option>
+            <option value="amritsar">amritsar</option>
+            <option value="visakhapatnam">visakhapatnam</option>
+            <option value="kannur">kannur</option>
+            <option value="indore">indore</option>
+            <option value="ahmedabad">ahmedabad</option>
+        </select>
+        <img  class="direction"src="dirction.png"></img>
+        <label for="to"> to</label>
+        <select name="to" id="to">
+            <option value="delhi">delhi</option>
+            <option value="hyderabad">hyderabad</option>
+            <option value="goa">goa</option>
+            <option value="bangalore">bangalore</option>
+            <option value="tirupati">tirupati</option>
+            <option value="mumbai">mumbai</option>
+            <option value="chennai">chennai</option>
+            <option value="kolkata">kolkata</option>
+            <option value="lucknow">lucknow</option>
+            <option value="amritsar">amritsar</option>
+            <option value="visakhapatnam">visakhapatnam</option>
+            <option value="kannur">kannur</option>
+            <option value="indore">indore</option>
+            <option value="ahmedabad">ahmedabad</option>
+        </select>
+    </li>
+        <br><br>
+        
+         </div>
+         <br><br>
+         <li class="arrangement">
+         <div>
+            <label for="adult">adult</label>
+            <select name="adult" id="adult">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            </select>   
+         </div>
+         
+            <div>
+            <label for="child">child</label>
+            <select name="child" id="child">
+             <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            </select>   
+         </div>
+         <div>
+            <label for="infant">infant</label>
+            <select name="infant" id="infant">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            </select>   
+         </div>
+        </li>
+         <div class="set">
+            <lable for="economy">economy</lable>
+            <select name="economy" id="economy">
+                <option value="Economy">Economy</option>
+                <option value="Business">business</option>
+                <option value="First">First</option>
+            </select>
+         </div>
+          
+        
+
+        
+            <div class="scroll-text"><p  class="heading">
+            welcome to mkr airlines.have a safe journey
+        </p></div></div></li>
+        <table>
+            <tr>
+                <th>place</th>
+                <th>price for adult</th>
+                <th>price for child</th>
+                <th>price for infant</th>
+            </tr>
+            <tr>
+                <td>goa</td>
+                <td>2000</td>
+                <td>1500</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>delhi</td>
+                <td>7000</td>
+                <td>5000</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <td>bangalore</td>
+                <td>2000</td>
+                <td>1500</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>tirupati</td>
+                <td>5000</td>
+                <td>3500</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>mumbai</td>
+                <td>10000</td>
+                <td>8000</td>
+                <td>6000</td>
+            </tr>
+            <tr>
+                <td>chennai</td>
+                <td>2000</td>
+                <td>1500</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>kolkata</td>
+                <td>20000</td>
+                <td>15000</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>lucknow</td>
+                <td>15000</td>
+                <td>10000</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>amritsar</td>
+                <td>2000</td>
+                <td>1500</td>
+                <td>1000</td>
+            </tr>
+
+            </tr>
+        </table>
+        
+       
+            aadhar card:
+            <input type="file" name="fileToUpload" id="fileToUpload">
+           
+          
+          
+          <label> Firstname </label>         
+          <input type="text" name="firstname" size="15"/> <br> <br>  
+          <label> Middlename: </label>     
+          <input type="text" name="middlename" size="15"/> <br> <br>  
+          <label> Lastname: </label>         
+          <input type="text" name="lastname" size="15"/> <br> <br> 
+          <label> Moblie Number: </label>         
+          <input type="number" name="Mobile_Number" size="12"/> <br> <br> 
+          <label> Aadhar: </label>         
+          <input type="number" name="Aadhar" size="12"/> <br> <br>
+          <button style=" position:relative;left:135px;top:0px;"> submit</button>
+        </form>
+    </body>
+</html>
